@@ -1,0 +1,167 @@
+/* Custom styles for Costa Tropical website */
+
+/* Coastal color scheme */
+:root {
+  --ocean-blue: #1a75ff;
+  --sand: #f4d03f;
+  --coral: #ff6b6b;
+  --seafoam: #7bed9f;
+  --deep-sea: #2c3e50;
+}
+
+/* Enhanced navigation */
+.navbar-custom {
+  background: rgba(44, 62, 80, 0.9);
+}
+
+p[data-i18n="renovationDesc"] {
+  white-space: pre-line;
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--sand) !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Hero section improvements */
+.home-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/bg-masthead.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.titan-caption {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Location cards */
+.alt-features-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.alt-features-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Service features */
+.features-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features-icon {
+  color: var(--ocean-blue);
+}
+
+/* Contact section */
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/contact-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+/* Language dropdown */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.language-current {
+  cursor: pointer;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.language-current img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.language-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--deep-sea);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.language-dropdown:hover .language-options {
+  display: block;
+}
+
+.flag-item {
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.flag-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.flag-item img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.flag-item.active {
+  background-color: rgba(244, 208, 63, 0.1);
+}
+
+@media (max-width: 768px) {
+  .language-current {
+    padding: 10px;
+  }
+  
+  .language-options {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .titan-caption {
+    padding: 1rem;
+  }
+  
+  .features-item,
+  .alt-features-item {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Custom buttons */
+.btn-border-w {
+  background: transparent;
+  border: 2px solid var(--sand);
+  color: var(--sand);
+  transition: all 0.3s ease;
+}
+
+.btn-border-w:hover {
+  background: var(--sand);
+  color: var(--deep-sea);
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="sv" dir="ltr">
 
 <head>
   <meta charset="utf-8">
@@ -9,7 +9,7 @@
     Document Title
     =============================================
     -->
-  <title>Byggstrategi S.L.</title>
+  <title>Byggstrategi S.L | Nerja - Almuñécar</title>
   <!--  
     Favicons
     =============================================
@@ -52,6 +52,7 @@
   <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
   <!-- Main stylesheet and color file-->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
   <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
 </head>
 
@@ -60,188 +61,130 @@
     <div class="page-loader">
       <div class="loader">Loading...</div>
     </div>
+
     <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top one-page" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span
               class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span
-              class="icon-bar"></span></button><a class="navbar-brand" href="#totop">BYGGSTRATEGI</a>
+              class="icon-bar"></span></button><a class="navbar-brand" href="#totop">Byggstrategi S.L.</a>
         </div>
         <div class="collapse navbar-collapse" id="custom-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#totop" style="color: white;">Hem</a></li>
-            <li><a class="section-scroll" href="#services" style="color: white;">Tjänster</a></li>
-            <li><a class="section-scroll" href="#news" style="color: white;">Projekt</a></li>
+            <li><a href="#totop" style="color: white;" data-i18n="home">Home</a></li>
+            <li><a class="section-scroll" href="#services" style="color: white;" data-i18n="services">Services</a></li>
+            <li><a class="section-scroll" href="#locations" style="color: white;" data-i18n="locations">Our Locations</a></li>
+            <li><a class="section-scroll" href="#contact" style="color: white;" data-i18n="contact">Contact</a></li>
+            <li class="language-dropdown">
+              <div class="language-current">
+                <!-- Ändra standardflaggan till svensk flagga -->
+                <img src="https://flagcdn.com/w40/se.png" alt="Current Language" id="currentFlag">
+              </div>
+              <div class="language-options">
+                <!-- Ändra vilken flagga som är aktiv från början -->
+                <div class="flag-item active" data-lang="sv">
+                  <img src="https://flagcdn.com/w40/se.png" alt="Svenska">
+                </div>
+                <div class="flag-item" data-lang="es">
+                  <img src="https://flagcdn.com/w40/es.png" alt="Español">
+                </div>
+                <div class="flag-item" data-lang="en">
+                  <img src="https://flagcdn.com/w40/gb.png" alt="English">
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <section class="home-section home-full-height bg-dark bg-gradient" id="home"
       data-background="assets/images/bg-masthead.jpeg">
       <div class="titan-caption">
         <div class="caption-content">
-          <!--<div class="font-alt mb-30 titan-title-size-4">Byggstrategi</div>-->
-          <div class="font-alt mb-70 titan-title-size-2" style="font-size: 32px;"><b>Vi gör ditt byggprojekt tryggt och enkelt på solkusten!</b>
+          <div class="font-alt mb-70 titan-title-size-2" style="font-size: 32px;">
+            <b data-i18n="heroTitle">Your Building Dreams Come True on the Costa Tropical</b>
           </div>
-          <div class="font-alt mb-40 titan-title-size-1" style="font-size: 20px;">Kontakta oss idag</div>
-          <div class="font-alt mb-40 titan-title-size-2"><!--<span class="rotate"></span>--><a href="tel:+46704163393"
-              style="font-size: 20px; color: white; margin-bottom: 20px; display: inline-block;">+46 (0)70 - 416 33 93</a>
-            <a href="mailto:johan@byggstrategi.se" style="color: white; font-size: 20px;">johan@byggstrategi.es</a>
+          <div class="font-alt mb-40 titan-title-size-1" style="font-size: 20px;" data-i18n="heroSubtitle">
+            Expert Construction & Renovation Services in Nerja, Almuñécar
+          </div>
+          <div class="font-alt mb-30">
+            <a class="section-scroll btn btn-border-w btn-round" href="https://wa.me/46704163393" data-i18n="contactButton" >Contact Us Today</a>
           </div>
         </div>
       </div>
     </section>
-    <div class="main">
-      <section class="module" id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt">Tjänster</h2>
-              <div class="module-subtitle font-serif">Med fokus på svensk standard tar vi ditt bygge från start till mål
-                på den spanska solkusten!</div>
 
+    <section class="module" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <h2 class="module-title font-alt" data-i18n="servicesTitle">Our Services</h2>
+            <div class="module-subtitle font-serif" data-i18n="servicesSubtitle">Specialized construction and renovation services for the unique needs of Costa Tropical properties</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="features-item">
+              <div class="features-icon"><span class="icon-tools"></span></div>
+              <h3 class="features-title font-alt" data-i18n="renovation">Renovations & Reforms</h3>
+              <p data-i18n="renovationDesc">Transform your Costa Tropical property with our expert renovation services. From traditional andalusian homes to modern apartments.</p>
             </div>
           </div>
-          <div class="row multi-columns-row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="features-item">
-                <div class="features-icon"><span class="icon-lightbulb"></span></div>
-                <h3 class="features-title font-alt">Byggprojektledning</h3>
-                <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all
-                  your visitors.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="module bg-dark-60" id="locations" data-background="assets/images/section-6.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <h2 class="module-title font-alt" data-i18n="locationsTitle">Our Locations</h2>
+            <div class="module-subtitle font-serif" data-i18n="locationsSubtitle">Serving the most beautiful towns along the Costa Tropical</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="row">
+              <div class="col-sm-6 text-center" style="margin-bottom: 20px;">
+                <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 5px;">
+                  <h3 class="font-alt" style="color: white;">Nerja</h3>
+                </div>
               </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="features-item">
-                <div class="features-icon"><span class="icon-bike"></span></div>
-                <h3 class="features-title font-alt">Renovering</h3>
-                <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all
-                  your visitors.</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="features-item">
-                <div class="features-icon"><span class="icon-tools"></span></div>
-                <h3 class="features-title font-alt">Ombyggnad</h3>
-                <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all
-                  your visitors.</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="features-item">
-                <div class="features-icon"><span class="icon-gears"></span></div>
-                <h3 class="features-title font-alt">Tillbyggnad</h3>
-                <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all
-                  your visitors.</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="features-item">
-                <div class="features-icon"><span class="icon-tools-2"></span></div>
-                <h3 class="features-title font-alt">Tvistärenden</h3>
-                <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all
-                  your visitors.</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="features-item">
-                <div class="features-icon"><span class="icon-genius"></span></div>
-                <h3 class="features-title font-alt">Besiktning</h3>
-                <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all
-                  your visitors.</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="features-item">
-                <div class="features-icon"><span class="icon-mobile"></span></div>
-                <h3 class="features-title font-alt">Skissärenden</h3>
-                <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all
-                  your visitors.</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="features-item">
-                <div class="features-icon"><span class="icon-lifesaver"></span></div>
-                <h3 class="features-title font-alt">Unt so weiter</h3>
-                <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all
-                  your visitors.</p>
+              <div class="col-sm-6 text-center" style="margin-bottom: 20px;">
+                <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 5px;">
+                  <h3 class="font-alt" style="color: white;">Almuñécar</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="module" id="news">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt">Projekt</h2>
-            </div>
-          </div>
-          <div class="row multi-columns-row post-columns">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-              <div class="post mb-20">
-                <div class="post-thumbnail">
-                  <img src="assets/images/hjortensbergsbadet.jpeg" alt="Blog-post Thumbnail" /></a>
-                </div>
-                <div class="post-header font-alt">
-                  <h2 class="post-title"><a href="#">Hjortensbergsbadet</a></h2>
-                  <div class="post-meta">Beställare:&nbsp;<a href="#">Nyköpings kommun</a>&nbsp;| 2015
-                  </div>
-                </div>
-                <div class="post-entry">
-                  <p>Byggprojektledning för renovering och ombyggnation av badhus i Nyköping, Sverige
-                    Jag anslöt till projektet under renoverings- och ombyggnadsprocessens gång för att bidra med
-                    expertis och säkerställa att projektets mål och tidplaner kunde uppfyllas. Tillsammans med Nyköpings
-                    kommun har jag arbetat för att optimera projektets genomförande, med fokus på att skapa en modern
-                    och hållbar badhusmiljö som uppfyller både kommunens och användarnas förväntningar.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-              <div class="post mb-20">
-                <div class="post-thumbnail"><img src="assets/images/nybodaskola.jpeg" alt="Blog-post Thumbnail" /></a>
-                </div>
-                <div class="post-header font-alt">
-                  <h2 class="post-title"><a href="#">Nyboda skola</a></h2>
-                  <div class="post-meta">Beställare: &nbsp;<a href="#">Tyresö kommun</a>&nbsp;| 2012
-                  </div>
-                </div>
-                <div class="post-entry">
-                  <p>Byggprojektledning för renovering och ombyggnation av badhus i Nyköping, Sverige
-                    Jag anslöt till projektet under renoverings- och ombyggnadsprocessens gång för att bidra med
-                    expertis och säkerställa att projektets mål och tidplaner kunde uppfyllas. Tillsammans med Nyköpings
-                    kommun har jag arbetat för att optimera projektets genomförande, med fokus på att skapa en modern
-                    och hållbar badhusmiljö som uppfyller både kommunens och användarnas förväntningar.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+    </section>
 
-        </div>
-      </section>
-
-      <hr class="divider-d">
-      <footer class="footer bg-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="copyright font-alt"><a href="tel:+46704163393" style="color: white;">+46 (0)70 - 416 33 93</a> |
-                <a href="mailto:johan@byggstrategi.se" style="color: white;">johan@byggstrategi.es</a>
-              </p>
-            </div>
-            <div class="col-sm-6">
-
-            </div>
+    <section class="module" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h2 class="module-title font-alt" data-i18n="contactTitle" style="color: white;">Get in Touch</h2>
+            <div class="module-subtitle font-serif" data-i18n="contactSubtitle" style="color: white;">Contact us for a consultation or to learn more about our services</div>
           </div>
         </div>
-    </div>
-    </div>
-    </footer>
-    </div>
-    <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
-    <script async="" defer=""
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <p class="copyright font-alt text-center"><a href="https://wa.me/46704163393" style="color: white; font-size: 24px;">+46 (0)70 - 416 33 93</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="divider-d">
+    
   </main>
+  </div>
+  <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+  <script async="" defer=""
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>
   <!--  
     JavaScripts
     =============================================
@@ -261,6 +204,9 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+  <!-- Language switcher scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/language-switcher.js"></script>
 </body>
 
 </html>
